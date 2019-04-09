@@ -1,0 +1,37 @@
+PODS:
+  - DatePickerDialog (2.0)
+  - MantleModal (1.0.2)
+  - MGSwipeTableCell (1.6.8)
+
+DEPENDENCIES:
+  - "DatePickerDialog (from `git@github.com:papipons/DatePickerDialog-iOS-Swift.git`, branch `swift4.2-migration`)"
+  - "MantleModal (from `git@github.com:chrisjgf/MantleModal.git`)"
+  - MGSwipeTableCell
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - MGSwipeTableCell
+
+EXTERNAL SOURCES:
+  DatePickerDialog:
+    :branch: swift4.2-migration
+    :git: "git@github.com:papipons/DatePickerDialog-iOS-Swift.git"
+  MantleModal:
+    :git: "git@github.com:chrisjgf/MantleModal.git"
+
+CHECKOUT OPTIONS:
+  DatePickerDialog:
+    :commit: f7b0e569f5f29d82837905dfb174b0e04c7b681d
+    :git: "git@github.com:papipons/DatePickerDialog-iOS-Swift.git"
+  MantleModal:
+    :commit: 528f0f31f3fd52e1744c4bbfcfec01687c8aba27
+    :git: "git@github.com:chrisjgf/MantleModal.git"
+
+SPEC CHECKSUMS:
+  DatePickerDialog: 18b12e3aba09b28dc6146bdf8573a9834d8ea2ab
+  MantleModal: 224ab419adb8282dc331bd85e8205486ac04e11a
+  MGSwipeTableCell: dc4eca3212ed38a563b27d6aa7b3c01ce656c1e2
+
+PODFILE CHECKSUM: 16a70d041726beeb1b3a81f008f0910e71312eaa
+
+COCOAPODS: 1.6.0

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SettingsTableHeader" customModule="Budgie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="327" height="99"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xgK-Rb-XdT">
+                    <rect key="frame" x="0.0" y="0.0" width="327" height="99"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CvQ-H3-PsP">
+                            <rect key="frame" x="18" y="42" width="33" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.37" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="CvQ-H3-PsP" firstAttribute="centerY" secondItem="xgK-Rb-XdT" secondAttribute="centerY" id="dcY-nG-KL6"/>
+                        <constraint firstItem="CvQ-H3-PsP" firstAttribute="leading" secondItem="xgK-Rb-XdT" secondAttribute="leading" constant="18" id="q12-9y-exU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="xgK-Rb-XdT" secondAttribute="bottom" id="Ju0-4b-c0E"/>
+                <constraint firstItem="xgK-Rb-XdT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="KUV-NL-wW0"/>
+                <constraint firstAttribute="trailing" secondItem="xgK-Rb-XdT" secondAttribute="trailing" id="Tdv-Ed-2vj"/>
+                <constraint firstItem="xgK-Rb-XdT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="x0l-V1-kUN"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="title" destination="CvQ-H3-PsP" id="bFJ-un-ZTm"/>
+            </connections>
+            <point key="canvasLocation" x="-213.5" y="111.5"/>
+        </view>
+    </objects>
+</document>

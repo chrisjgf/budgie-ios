@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cellExpanded" rowHeight="153" id="9Xf-BJ-TN6" customClass="ExpandedCell" customModule="Budgie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="466" height="181"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Xf-BJ-TN6" id="OcM-Do-kz8">
+                <rect key="frame" x="0.0" y="0.0" width="433" height="180.66666666666666"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="$00.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anG-mJ-HjY" customClass="PaddingLabel" customModule="Budgie" customModuleProvider="target">
+                        <rect key="frame" x="357" y="79" width="58" height="22"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <size key="shadowOffset" width="0.0" height="1"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="attach" translatesAutoresizingMaskIntoConstraints="NO" id="eFv-PX-mPh">
+                        <rect key="frame" x="297" y="65" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="eFv-PX-mPh" secondAttribute="height" multiplier="1:1" id="ECh-yf-4qg"/>
+                            <constraint firstAttribute="width" constant="50" id="ghQ-6D-w2Y"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="400" text="First" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3w-77-qDc">
+                        <rect key="frame" x="18" y="79" width="329" height="22"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <size key="shadowOffset" width="0.0" height="1"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="R3w-77-qDc" firstAttribute="leading" secondItem="OcM-Do-kz8" secondAttribute="leadingMargin" priority="500" constant="10" identifier="leftConstraint" id="71w-e7-74c"/>
+                    <constraint firstItem="anG-mJ-HjY" firstAttribute="leading" secondItem="eFv-PX-mPh" secondAttribute="trailing" constant="10" id="7JL-I1-XxU"/>
+                    <constraint firstItem="anG-mJ-HjY" firstAttribute="leading" secondItem="R3w-77-qDc" secondAttribute="trailing" priority="900" constant="10" id="9JR-iF-BOl"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="anG-mJ-HjY" secondAttribute="trailing" constant="10" id="AHt-Sr-UcY"/>
+                    <constraint firstItem="anG-mJ-HjY" firstAttribute="centerY" secondItem="OcM-Do-kz8" secondAttribute="centerY" id="BCz-Wc-boC"/>
+                    <constraint firstItem="eFv-PX-mPh" firstAttribute="leading" secondItem="R3w-77-qDc" secondAttribute="trailing" priority="800" constant="10" id="CyS-G0-npC"/>
+                    <constraint firstItem="R3w-77-qDc" firstAttribute="centerY" secondItem="OcM-Do-kz8" secondAttribute="centerY" priority="100" id="GU6-AD-Zlo"/>
+                    <constraint firstItem="R3w-77-qDc" firstAttribute="leading" secondItem="OcM-Do-kz8" secondAttribute="leadingMargin" constant="8" id="Kvv-hQ-YaY"/>
+                    <constraint firstItem="eFv-PX-mPh" firstAttribute="centerY" secondItem="OcM-Do-kz8" secondAttribute="centerY" id="mWR-3O-rgy"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Kvv-hQ-YaY"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="attachImage" destination="eFv-PX-mPh" id="pkh-s5-104"/>
+                <outlet property="title" destination="R3w-77-qDc" id="nYh-ij-dF9"/>
+                <outlet property="value" destination="anG-mJ-HjY" id="VhM-Va-CE2"/>
+            </connections>
+            <point key="canvasLocation" x="311" y="272.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="attach" width="128" height="128"/>
+    </resources>
+</document>

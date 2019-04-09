@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="colors_cell" rowHeight="117" id="9Xf-BJ-TN6" customClass="CustomColorsCellEdit" customModule="Budgie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="552" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Xf-BJ-TN6" id="OcM-Do-kz8">
+                <rect key="frame" x="0.0" y="0.0" width="552" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xKL-uG-Eua" customClass="FilterView" customModule="Budgie" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="552" height="69.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="xKL-uG-Eua" secondAttribute="bottom" id="ATS-hC-Ds1"/>
+                    <constraint firstItem="xKL-uG-Eua" firstAttribute="leading" secondItem="OcM-Do-kz8" secondAttribute="leading" id="cXc-li-l8X"/>
+                    <constraint firstItem="xKL-uG-Eua" firstAttribute="top" secondItem="OcM-Do-kz8" secondAttribute="top" id="kwn-gw-pLY"/>
+                    <constraint firstAttribute="trailing" secondItem="xKL-uG-Eua" secondAttribute="trailing" id="poy-Hs-n4q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="filterView" destination="xKL-uG-Eua" id="veK-7n-3zc"/>
+            </connections>
+            <point key="canvasLocation" x="308.5" y="248.5"/>
+        </tableViewCell>
+    </objects>
+</document>
